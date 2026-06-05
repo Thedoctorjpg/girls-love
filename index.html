@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>American Goddessess Story Creator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="wrapper">
+      <h1>American Goddessess Story Creator</h1>
+      <p>Create a queer mythic romance inspired by modern gods, road-trip magic, and girls-love intimacy.</p>
+    </div>
+  </header>
+
+  <main class="wrapper">
+    <section class="intro-card">
+      <h2>Build Your Story</h2>
+      <p>Enter your characters, select themes, and press generate to turn your inputs into a short Girls’ Love modern myth.</p>
+    </section>
+
+    <section class="form-card">
+      <div class="field-grid">
+        <label>
+          Lead A Name
+          <input id="nameA" type="text" placeholder="Mara" />
+        </label>
+        <label>
+          Lead B Name
+          <input id="nameB" type="text" placeholder="June" />
+        </label>
+      </div>
+
+      <label>
+        Setting
+        <input id="setting" type="text" placeholder="Oklahoma highway, laundromat shrine, desert diner" />
+      </label>
+
+      <fieldset>
+        <legend>Choose story tropes</legend>
+        <label><input type="checkbox" value="road trip" checked /> Road Trip</label>
+        <label><input type="checkbox" value="modern goddess" checked /> Modern Goddess</label>
+        <label><input type="checkbox" value="secret shrine" /> Secret Shrine</label>
+        <label><input type="checkbox" value="food truck" /> Food Truck</label>
+        <label><input type="checkbox" value="late night coding" /> Late Night Ritual</label>
+      </fieldset>
+
+      <label>
+        Keywords and mood
+        <input id="keywords" type="text" placeholder="warm, tender, rebellious, neon, magic" />
+      </label>
+
+      <div class="button-row">
+        <button id="generateBtn" type="button">Generate Story</button>
+        <button id="copyBtn" type="button">Copy Story</button>
+      </div>
+    </section>
+
+    <section class="output-card">
+      <div class="output-header">
+        <h2>Your Story Preview</h2>
+        <span id="storyStatus">Ready to generate</span>
+      </div>
+      <div id="storyOutput" class="story-output">The generated story will appear here after you click <strong>Generate Story</strong>.</div>
+    </section>
+
+    <section class="example-card">
+      <h2>How It Works</h2>
+      <p>This app turns your names, setting, and chosen tropes into a brief, atmospheric queer romance scene you can build on. Every generation chooses a goddess archetype, a shared project, and a rising emotional moment.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>American Goddessess Story Creator • Styled from Girls’ Love web material</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
